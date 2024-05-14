@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Management App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Learning Management App</h1>
+    
+    <form id="register-form" action="http://localhost:3000/register" method="POST">
+        <h2>Register</h2>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <form id="login-form" action="http://localhost:3000/login" method="POST">
+        <h2>Login</h2>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <form id="logout-form" action="http://localhost:3000/logout" method="POST">
+        <button type="submit">Logout</button>
+    </form>
+
+    <!-- Added form with ID 'courseSelectionForm' -->
+    <form id="courseSelectionForm" action="http://localhost:3000/select-courses" method="POST">
+        <!-- Add your form fields for course selection here -->
+        <input type="checkbox" name="course" value="Course 1"> Course 1
+        <input type="checkbox" name="course" value="Course 2"> Course 2
+        <!-- Add more course options as needed -->
+        <button type="submit">Select Courses</button>
+    </form>
+    
+    <!-- Move the script tag to the end of the body -->
+    <script src="script.js"></script>
+</body>
+</html>
+ 
+
